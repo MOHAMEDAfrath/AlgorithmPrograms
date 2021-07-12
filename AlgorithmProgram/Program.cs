@@ -10,6 +10,7 @@ namespace AlgorithmProgram
             Console.WriteLine("1) Permutaions of a string");
             Console.WriteLine("2) Binary Search");
             Console.WriteLine("3) Insertion Sort");
+            Console.WriteLine("4) Bubble Sort");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -24,6 +25,12 @@ namespace AlgorithmProgram
                     Console.WriteLine("***Insertion Sort***");
                     InsertionSort.InsertionSortOperation();
                     break;
+                case "4":
+                    Console.WriteLine("***Bubble Sort***");
+                    BubbleSort.Bubble();
+                    break;
+                
+
 
 
             }
