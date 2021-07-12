@@ -11,6 +11,7 @@ namespace AlgorithmProgram
             Console.WriteLine("2) Binary Search");
             Console.WriteLine("3) Insertion Sort");
             Console.WriteLine("4) Bubble Sort");
+            Console.WriteLine("5) Merge Sort");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -29,8 +30,10 @@ namespace AlgorithmProgram
                     Console.WriteLine("***Bubble Sort***");
                     BubbleSort.Bubble();
                     break;
-                
-
+                case "5":
+                    Console.WriteLine("***Merge Sort***");
+                    MergeSort.MergeSorting();
+                    break;
 
 
             }
