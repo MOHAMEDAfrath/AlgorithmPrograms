@@ -13,6 +13,7 @@ namespace AlgorithmProgram
             Console.WriteLine("4) Bubble Sort");
             Console.WriteLine("5) Merge Sort");
             Console.WriteLine("6) Anagram");
+            Console.WriteLine("7) Prime number between 0 and 1000");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -47,7 +48,10 @@ namespace AlgorithmProgram
                         Console.WriteLine("Not a anagram");
                     }
                     break;
-
+                case "7":
+                    Console.WriteLine("***Prime Between 0 and 1000***");
+                    PrimeNumbersInRange.Prime();
+                    break;
 
             }
 
