@@ -8,12 +8,10 @@ namespace AlgorithmProgram
 {
     class Anagram
     {
-        public static bool CompareTwoStrings()
+        public static bool CompareTwoStrings(string string1,string string2)
         {
             bool found = true;
-            Console.WriteLine("Enter the two strings to compare:");
-            string string1 = Console.ReadLine();
-            string string2 = Console.ReadLine();
+            
             if (string1.Length != string2.Length)
             {
                 found = false;

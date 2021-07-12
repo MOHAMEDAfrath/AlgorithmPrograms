@@ -52,5 +52,42 @@ namespace AlgorithmProgram
            
            
         }
+        public static int checkPrime(int number)
+        {
+            int flag = 1;
+            if (number == 1 || number == 0) { flag = 0; }
+              
+            for (int i = 2; i <= number / 2; ++i)
+            {
+                if (number % i == 0)
+                {
+                    flag = 0;
+                    break;
+                }
+            }
+            return flag;
+        }
+
+        public static bool Palindrome(int number1)
+        {
+            int temp = number1;
+            int result = 0;
+            while (temp != 0)
+            {
+                int rem = temp % 10;
+                result = result * 10 + rem;
+                temp /= 10;
+            }
+            if(result == number1)
+            {
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
     }
 }
