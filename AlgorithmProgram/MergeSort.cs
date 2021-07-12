@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace AlgorithmProgram
 {
-    class MergeSort
+    class MergeSort<T> where T:IComparable
     {
         public static void MergeSorting()
         {
             Console.WriteLine("Enter the number of elements to be inserted");
             int number = Convert.ToInt32(Console.ReadLine());
-            List<int> list = new List<int>();
+            List<T> list = new List<T>();
             Console.WriteLine("The elements");
             for (int i = 0; i < number; i++)
             {
-                list.Add(Convert.ToInt32(Console.ReadLine()));
+                list.Add((T)Convert.ChangeType(Console.ReadLine(), typeof(T)));
             }
             Console.WriteLine("After Merge sort");
             Sort(list, 0, list.Count - 1);
@@ -25,12 +25,12 @@ namespace AlgorithmProgram
 
 
         }
-        public static void merge(List<int> arr, int l, int m, int r)
+        public static void merge(List<T> arr, int l, int m, int r)
         {
             int left = m - l + 1;
             int right = r - m;
-            int[] Left = new int[left];
-            int[] Right = new int[right];
+            T[] Left = new T[left];
+            T[] Right = new T[right];
             int i, j;
             for (i = 0; i < left; ++i)
             {
@@ -45,7 +45,7 @@ namespace AlgorithmProgram
            int k = l;
             while (i < left && j < right)
             {
-                if (Left[i] <= Right[j])
+                if (Left[i].CompareTo(Right[j])<0 || Left[i].CompareTo(Right[j]) == 0)
                 {
                     arr[k] = Left[i];
                     i++;
@@ -73,7 +73,7 @@ namespace AlgorithmProgram
             }
             
         }
-        public static void Sort(List<int> list,int start,int end)
+        public static void Sort(List<T> list,int start,int end)
         {
             if (start < end)
             {
@@ -85,7 +85,7 @@ namespace AlgorithmProgram
             }
 
         }
-        public static void Display(List<int> list)
+        public static void Display(List<T> list)
         {
             foreach (var mem in list)
             {

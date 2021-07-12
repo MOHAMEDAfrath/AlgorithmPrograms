@@ -29,15 +29,18 @@ namespace AlgorithmProgram
                         break;
                     case "3":
                         Console.WriteLine("***Insertion Sort***");
-                        InsertionSort.InsertionSortOperation();
+                        InsertionSort<int>.InsertionSortOperation();
+                        Console.WriteLine(" ");
                         break;
                     case "4":
                         Console.WriteLine("***Bubble Sort***");
-                        BubbleSort.Bubble();
+                        BubbleSort<int>.Bubble();
+                        Console.WriteLine(" ");
                         break;
                     case "5":
                         Console.WriteLine("***Merge Sort***");
-                        MergeSort.MergeSorting();
+                        MergeSort<int>.MergeSorting();
+                        Console.WriteLine(" ");
                         break;
                     case "6":
                         Console.WriteLine("***Anagram***");
