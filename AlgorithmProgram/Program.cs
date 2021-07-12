@@ -12,6 +12,7 @@ namespace AlgorithmProgram
             Console.WriteLine("3) Insertion Sort");
             Console.WriteLine("4) Bubble Sort");
             Console.WriteLine("5) Merge Sort");
+            Console.WriteLine("6) Anagram");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -33,6 +34,18 @@ namespace AlgorithmProgram
                 case "5":
                     Console.WriteLine("***Merge Sort***");
                     MergeSort.MergeSorting();
+                    break;
+                case "6":
+                    Console.WriteLine("***Anagram***");
+                    bool result = Anagram.CompareTwoStrings();
+                    if (result)
+                    {
+                        Console.WriteLine("Yes it is a anagram");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Not a anagram");
+                    }
                     break;
 
 
