@@ -18,6 +18,7 @@ namespace AlgorithmProgram
                 Console.WriteLine("7) Prime number between 0 and 1000");
                 Console.WriteLine("8) Prime number anagram and palindrome");
                 Console.WriteLine("9) Guess my number");
+                Console.WriteLine("10) Message Validation");
                 switch (Console.ReadLine())
                 {
                     case "1":
@@ -101,6 +102,9 @@ namespace AlgorithmProgram
                         QuestionGuessing.ThinkNumber();
                         break;
                     case "10":
+                        MessageRegex.MatchandReplace();
+                        break;
+                    case "11":
                         return;
 
 
