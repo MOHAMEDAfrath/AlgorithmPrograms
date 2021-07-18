@@ -11,6 +11,7 @@ namespace AlgorithmProgram
     {
         public static void Binarysearch()
         {
+            //Reads from file
             string text = File.ReadAllText(@"C:\Users\afrat\source\repos\AlgorithmProgram\AlgorithmProgram\BinarySearch.txt");
             List<string> list = new List<string>(text.Split(" "));
             list.Sort();
@@ -24,6 +25,7 @@ namespace AlgorithmProgram
                 Console.WriteLine("Not Found {0}", key);
 
         }
+        //Binary search where elements are compared by finding mid
         public static bool Search(List<string> list,int start,int end,string key)
         {
             bool found = false;

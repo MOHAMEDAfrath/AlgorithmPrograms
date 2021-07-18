@@ -39,6 +39,7 @@ namespace AlgorithmProgram
             }
             return val;
         }
+        //Here permutation takes place using factorial and iterative method
         public static void IterationPermut(string input)
         {
             Console.WriteLine("Using Iteration");
@@ -68,6 +69,7 @@ namespace AlgorithmProgram
 
 
         }
+        //Recursive method is used to find permuted string
         public static void RecursionPermut(string input,int start,int end)
         {
             if(start == end)

@@ -26,9 +26,10 @@ namespace AlgorithmProgram
             {
                 
                 for (int j = i; j < list.Count; j++)
-                    
+                    //comparing to find small elements and swap to sort
                     if (list[i].CompareTo(list[j])>0)
                     {
+                        //Swapping using temp
                         T temp = list[i];
                         list[i] = list[j];
                         list[j] = temp;

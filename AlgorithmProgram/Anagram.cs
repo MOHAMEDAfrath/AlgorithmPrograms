@@ -11,7 +11,7 @@ namespace AlgorithmProgram
         public static bool CompareTwoStrings(string string1,string string2)
         {
             bool found = true;
-            
+            //Check for the equality of length
             if (string1.Length != string2.Length)
             {
                 found = false;
@@ -20,6 +20,7 @@ namespace AlgorithmProgram
             {
                 char[] temp1 = string1.ToCharArray();
                 char[] temp2 = string2.ToCharArray();
+                //sort both string so that we can check if they are anagram
                 Array.Sort<char>(temp1);
                 Array.Sort<char>(temp2);
                 for(int i = 0; i < temp1.Length; i++)

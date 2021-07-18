@@ -8,12 +8,14 @@ namespace AlgorithmProgram
 {
     class PrimeNumbersInRange
     {
+        //checks the prime number in range
         public static void Prime()
         {
             int count = 1;
             int flag = 1;
             int start = 0;
             int end = 1000;
+            //ignores 0 and 1
             if(start == 0)
             {
                 start++;
@@ -24,14 +26,17 @@ namespace AlgorithmProgram
                 
                
             }
+            //Include 2 as prime number
             if(start == 2)
             {
                 Console.Write(start+" ");
             }
+            //skip if even number
             if(start%2 == 0)
             {
                 start++;
             }
+            //iterate to find prime by setting flags
             for(int i = start; i <= end; i++)
             {
                 flag = 1;
@@ -67,7 +72,7 @@ namespace AlgorithmProgram
             }
             return flag;
         }
-
+        //finds palindrome i.e;13=31
         public static bool Palindrome(int number1)
         {
             int temp = number1;

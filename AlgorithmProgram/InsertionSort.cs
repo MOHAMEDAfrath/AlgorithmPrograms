@@ -29,9 +29,11 @@ namespace AlgorithmProgram
                 int j = i - 1;
                 while (j >= 0 && list[j].CompareTo(key)>0)
                 {
+                    //Insert the greatest element over small
                     list[j + 1] = list[j];
                     j = j - 1;
                 }
+                //small element is placed on sorted manner
                 list[j + 1] = key;
             }
             foreach(var mem in list)

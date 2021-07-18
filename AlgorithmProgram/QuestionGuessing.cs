@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgorithmProgram
 {
+    //finds the number quessed by user by using binary search
     class QuestionGuessing
     {
         static int start = 1, end = 100, found = 0, foundNumber = 0;

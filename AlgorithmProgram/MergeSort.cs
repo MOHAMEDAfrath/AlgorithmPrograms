@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgorithmProgram
 {
+    //Generics class
     class MergeSort<T> where T:IComparable
     {
         public static void MergeSorting()
@@ -25,6 +26,7 @@ namespace AlgorithmProgram
 
 
         }
+        //sorts the halfs of the array and then merge
         public static void merge(List<T> arr, int l, int m, int r)
         {
             int left = m - l + 1;
@@ -73,6 +75,7 @@ namespace AlgorithmProgram
             }
             
         }
+        
         public static void Sort(List<T> list,int start,int end)
         {
             if (start < end)
